@@ -26,11 +26,12 @@ function Square(props) {
       }
 
     renderSquare(i) {
-      return <Square 
-      value={this.state.squares[i]} 
-      onClick={() => this.handleClick(i)}
-      />
-      ;
+      return (
+        <Square 
+          value={this.state.squares[i]} 
+          onClick={() => this.handleClick(i)}
+        />
+      );
     }
   
     render() {
